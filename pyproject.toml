@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ais86-prestamos-biblioteca"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+
+[tool.setuptools]
+packages = [
+  "ejercicio",
+  "ejercicio.dominio",
+  "ejercicio.nucleo",
+  "ejercicio.adaptadores",
+]
+
+[tool.setuptools.package-dir]
+ejercicio = "."
+"ejercicio.dominio" = "dominio"
+"ejercicio.nucleo" = "nucleo"
+"ejercicio.adaptadores" = "adaptadores"
